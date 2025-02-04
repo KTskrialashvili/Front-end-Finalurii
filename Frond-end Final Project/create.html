@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create/Edit News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="formTitle">Create News</h1>
+        <form id="newsForm">
+            <input type="hidden" id="newsId">
+            <label>Title:</label>
+            <input type="text" id="title" required>
+
+            <label>Description:</label>
+            <textarea id="description" required></textarea>
+
+            <label>Category:</label>
+            <select id="category">
+                <option value="Technology">Technology</option>
+                <option value="Business">Business</option>
+                <option value="Sports">Sports</option>
+            </select>
+
+            <button type="submit" class="btn">Save</button>
+        </form>
+        <a href="index.html" class="btn">Back to News List</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
